@@ -1,0 +1,23 @@
+export default {
+  ['receive_booksDate'](state,{booksDate}){
+    state.booksDate=booksDate
+  },
+  SetUserMeg(state,platform){
+    state.UserMeg=platform;
+  },
+  ['receive_userMeg'](state,{allUserMeg}){
+    state.allUserMeg=allUserMeg
+  },
+  ['userAllMeg'](state,{allMeg,favorVO,borrowInfos,comments}){
+    state.userAllMeg=allMeg
+    state.MyFavor=favorVO
+    state.MyBorrow=borrowInfos
+    state.MyComments=comments
+  },
+  ['gethotBook'](state,{hotBooks}){
+    state.hotBooks=hotBooks
+  },
+  ['getBorrow'](state,{allStuBorrow}){
+    state.allStuBorrow=allStuBorrow
+  }
+}
